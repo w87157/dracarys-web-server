@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "target": "ESNext",
+    "module": "CommonJS", // 指定生成什麼模塊代碼。
+    "lib": ["esnext"],
+    "strict": true, // 啟用所有嚴格的類型檢查選項。默認:false
+    "noImplicitAny": false, // 為具有隱含“any”類型的表達式和聲明啟用錯誤報告。
+    "esModuleInterop": true, // esm和cjs混用
+    "forceConsistentCasingInFileNames": true, // 在文件名中強制使用一致的大小寫
+    "moduleResolution": "node", // 指定模塊解析策略
+    "resolveJsonModule": true, // 解析json模塊
+    "skipLibCheck": true, // 跳過d.ts聲明文件的類型檢查。
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+    "@/secret/*": ["src/secret/*"]  
+    },
+    "outDir": "./dist"
+  },
+
+  // ts-node的時候會讀取這裡的配置
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs" // 指定生成什麼模塊代碼。
+    },
+    "transpileOnly": true // 只編譯，報警告或者錯誤一樣執行
+  }
+}

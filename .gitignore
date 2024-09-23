@@ -1,0 +1,14 @@
+node_modules
+.DS_Store
+dist
+src/config/secret.ts
+src/config/config.json
+src/upload/**/*
+src/secret/secret.ts
+TODO.md
+package-lock.json
+.vscode/
+newforum
+readme.txt
+src/public/img/
+
